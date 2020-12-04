@@ -1,0 +1,162 @@
+.roadmap {
+  text-align: center;
+  margin-top: 72px;
+
+  @media (min-width: $xs-min-width) {
+
+  }
+
+  @media (min-width: $sm-min-width) {
+    margin-top: 58px;
+  }
+
+  @media (min-width: $lg-min-width) {
+    margin-top: 72px;
+  }
+
+  h2 {
+    margin: 0 0 52px;
+  }
+
+  &-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media (min-width: $xs-min-width) {
+
+    }
+
+    @media (min-width: $sm-min-width) {
+      justify-content: center;
+    }
+
+    @media (min-width: $lg-min-width) {
+      justify-content: space-between;
+    }
+
+
+    li {
+      position: relative;
+
+      @media (min-width: $xs-min-width) {
+        width: 100%;
+        margin-bottom: 28px;
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+
+      @media (min-width: $sm-min-width) {
+        min-width: 275px;
+        max-width: calc((100% / 2) - 28px);
+
+        &:nth-of-type(1) {
+          margin-right: 28px;
+        }
+
+        &:nth-of-type(3) {
+          margin-top: 28px;
+        }
+      }
+
+      @media (min-width: $lg-min-width) {
+        min-width: auto;
+        max-width: none;
+
+        &:nth-of-type(1) {
+          margin-right: 0px;
+        }
+
+        &:nth-of-type(3) {
+          margin-top: 0px;
+        }
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        background: url('../img/icon-arrow-right.svg');
+        width: 10px;
+        height: 10px;
+        right: -15px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+
+        @media (min-width: $xs-min-width) {
+
+        }
+
+        @media (min-width: $sm-min-width) {
+          display: none;
+        }
+
+        @media (min-width: $lg-min-width) {
+          display: block;
+        }
+      }
+
+      p {
+        position: absolute;
+        width: 295px;
+        height: 56px;
+
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        text-align: center;
+        padding: 6px 6px 7px;
+
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #7D9C87;
+        box-sizing: border-box;
+
+        @media (min-width: $xs-min-width) {
+
+        }
+
+        @media (min-width: $sm-min-width) {
+          width: calc(100% - 60px);
+          height: 51px;
+        }
+
+        @media (min-width: $lg-min-width) {
+          width: 295px;
+          height: 56px;
+        }
+      }
+
+      &:nth-of-type(2) {
+        p {
+          background: #6AC55C;
+        }
+      }
+
+      &:nth-of-type(3) {
+        p {
+          background: #136B3A;
+        }
+
+        &:after {
+          display: none;
+        }
+      }
+    }
+
+
+  }
+}

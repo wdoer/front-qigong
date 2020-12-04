@@ -1,0 +1,114 @@
+.inspiration {
+
+  @media (min-width: $xs-min-width) {
+    padding-top: 63px;
+  }
+
+  @media (min-width: $sm-min-width) {
+    padding-top: 73px;
+  }
+
+  @media (min-width: $lg-min-width) {
+    padding-top: 95px;
+  }
+
+
+  h2 {
+    margin: 0 0 30px;
+    text-align: center;
+  }
+
+  &-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+
+    @media (min-width: $xs-min-width) {
+      flex-direction: column;
+    }
+
+
+    @media (min-width: $lg-min-width) {
+      flex-direction: row;
+    }
+
+    &--item {
+      width: calc((100% / 2) - 10px);
+      height: 244px;
+      box-sizing: border-box;
+      background: linear-gradient(0deg, #FAFAFA 0%, rgba(255, 255, 255, 0.97) 100%);
+      padding: 21px 50px 20px 47px;
+
+      @media (min-width: $xs-min-width) {
+        width: 100%;
+        margin-bottom: 35px;
+        height: auto;
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+
+      @media (min-width: $sm-min-width) {
+        width: 100%;
+        margin-bottom: 27px;
+        height: 244px;
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+
+      @media (min-width: $lg-min-width) {
+        width: calc((100% / 2) - 10px);
+        margin-bottom: 0;
+      }
+
+      &---type {
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 600;
+        letter-spacing: -0.006em;
+        text-transform: uppercase;
+        padding-left: 23px;
+        color: #136B3A;
+        position: relative;
+
+        &:before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 12px;
+          height: 12px;
+          bottom: 0;
+          margin: auto;
+        }
+
+        &__week {
+          &:before {
+            background: url('../img/icon-calendar-favorite.svg');
+          }
+        }
+
+        &__request {
+          &:before {
+            background: url('../img/icon-request.svg');
+          }
+        }
+      }
+    }
+
+    h3 {
+      margin: 16px 0;
+
+      .date-info {
+        margin-left: 20px;
+      }
+    }
+  }
+}

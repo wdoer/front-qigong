@@ -1,0 +1,92 @@
+.notes {
+  padding-top: 90px;
+
+  @media (min-width: $xs-min-width) {
+    padding-top: 50px;
+  }
+
+  @media (min-width: $sm-min-width) {
+    padding-top: 60px;
+  }
+
+  @media (min-width: $lg-min-width) {
+    padding-top: 90px;
+  }
+
+
+  h2 {
+    margin: 0 0 0;
+    text-align: center;
+  }
+
+  &-inner {
+    background: linear-gradient(0deg, #FAFAFA 0%, rgba(255, 255, 255, 0.97) 100%);
+    padding: 40px 0 65px;
+
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+
+      @media (min-width: $xs-min-width) {
+        flex-direction: column;
+      }
+
+
+      @media (min-width: $lg-min-width) {
+        flex-direction: row;
+      }
+
+      li {
+        width: calc((100% / 2) - 10px);
+        height: 244px;
+        background: #fff;
+        box-sizing: border-box;
+        padding: 16px 45px 23px 57px;
+
+        @media (min-width: $xs-min-width) {
+          width: 100%;
+          height: auto;
+        }
+
+        @media (min-width: $sm-min-width) {
+          height: 244px;
+        }
+
+        @media (min-width: $lg-min-width) {
+          width: calc((100% / 2) - 10px);
+        }
+
+        h3 {
+          color:#000000
+        }
+
+        p {
+          font-size: 14px;
+          line-height: 20px;
+        }
+
+        .date-info {
+          float: right;
+          margin-right: 35px;
+
+          @media (min-width: $xs-min-width) {
+            margin-right: 0px;
+          }
+
+          @media (min-width: $sm-min-width) {
+            margin-right: 35px;
+          }
+        }
+
+        &:hover {
+          h3 {
+            color: #136B3A;
+          }
+        }
+      }
+    }
+  }
+}

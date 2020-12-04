@@ -1,0 +1,126 @@
+.video {
+  width: 667px;
+
+  @media (min-width: $xs-min-width) {
+    width: 100%;
+  }
+
+  @media (min-width: $sm-min-width) {
+    padding: 0 31px;
+    box-sizing: border-box;
+
+  }
+
+  @media (min-width: $lg-min-width) {
+    width: 667px;
+    padding: 0;
+  }
+
+  iframe {
+    width: 100%;
+
+    @media (min-width: $xs-min-width) {
+      height: 170px;
+    }
+
+    @media (min-width: $sm-min-width) {
+      height: 357px;
+
+    }
+  }
+
+  h2 {
+    text-align: center;
+    margin: 0 0 36px;
+
+    @media (min-width: $xs-min-width) {
+      margin-top: 40px;
+    }
+
+    @media (min-width: $sm-min-width) {
+      margin-top: 65px;
+    }
+
+    @media (min-width: $lg-min-width) {
+      margin-top: 0;
+    }
+  }
+
+  &-list {
+    margin: 18px 0 0 ;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+
+    @media (min-width: $xs-min-width) {
+      flex-direction: column;
+    }
+
+    @media (min-width: $sm-min-width) {
+      flex-direction: row;
+    }
+
+    li {
+      background: linear-gradient(0deg, #FAFAFA 0%, rgba(255, 255, 255, 0.97) 100%);
+      width: calc((100% / 2) - 10px);
+      height: 220px;
+      padding: 23px 23px 0 36px;
+      box-sizing: border-box;
+      position: relative;
+
+      @media (min-width: $xs-min-width) {
+        width: 100%;
+        margin-bottom: 20px;
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+
+      @media (min-width: $sm-min-width) {
+        width: calc((100% / 2) - 10px);
+        margin-bottom: 0;
+      }
+
+      .bookmark {
+        width: 12px;
+        height: 16px;
+        position: absolute;
+        right:12px;
+        top: 11px;
+        background: url('../img/icon-bookmark.svg');
+      }
+
+      h3 {
+        font-size: 18px;
+        line-height: 18px;
+        color: #000000;
+        margin: 0 0 7px;
+      }
+
+      span {
+        margin-bottom: 5px;
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 600;
+        display: block;
+      }
+
+      p {
+        margin: 0;
+        font-size: 14px;
+        line-height: 20px;
+        color: #4D4D4D;
+        font-weight: 300;
+      }
+
+      &:hover {
+        h3 {
+          color:#136B3A;
+        }
+      }
+    }
+  }
+
+}

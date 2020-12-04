@@ -1,0 +1,17 @@
+.chat {
+  width: 393px;
+}
+.chat h2 {
+  text-align: center;
+  margin: 0 0 36px;
+}
+.chat-container > p {
+  height: 62px;
+  background: #7D9C87;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/*# sourceMappingURL=chat.css.map */
